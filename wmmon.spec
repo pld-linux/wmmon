@@ -15,6 +15,7 @@ BuildRequires:	xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define 	_prefix		/usr/X11R6
+%define		_applnkdir	%{_datadir}/applnk
 
 %description
 WMMon monitors the realtime CPU load as well the average
@@ -51,10 +52,10 @@ make -C %{name} \
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir} \
-	$RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
+	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README HINTS CHANGES TODO
 
@@ -66,4 +67,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc {README,HINTS,CHANGES,TODO}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-/usr/X11R6/share/applnk/DockApplets/wmmon.desktop
+%{_applnkdir}/DockApplets/wmmon.desktop
