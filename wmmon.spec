@@ -59,12 +59,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc {README,HINTS,CHANGES}.gz
 %attr(755,root,root) %{_bindir}/%{name}
-
-%changelog
-* Mon May 17 1999 Piotr Czerwiñski <pius@pld.org.pl>
-  [1.0b2-3]
-- modified a bit spec file for PLD use,
-- package is FHS 2.0 compliant.
-
-* Fri May 22 1998 Cristian Gafton <gafton@redhat.com>
-- package built for PowerTools
