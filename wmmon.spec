@@ -4,7 +4,7 @@ Summary(pt_BR):	Applet para monitorar o uso de CPU/Memória/Disco/Swap
 Summary(es):	Applet para monitorar el uso de CPU/Memória/Disco/Swap
 Name:		wmmon
 Version:	1.0b2
-Release:	6
+Release:	7
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.xs4all.nl/~warp/files/%{name}-%{version}.tar.gz
@@ -59,7 +59,8 @@ de WindowMaker.
 %build
 %{__make} -C %{name} \
         CFLAGS="%{rpmcflags} -Wall" \
-	CC=%{__cc}
+	CC=%{__cc} \
+	LIBDIR="-L/usr/X11R6/%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
