@@ -69,14 +69,13 @@ install -d $RPM_BUILD_ROOT%{_bindir} \
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-gzip -9nf README HINTS CHANGES TODO
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README HINTS CHANGES TODO
 %attr(755,root,root) %{_bindir}/%{name}
 
 #%{_applnkdir}/DockApplets/wmmon.desktop
