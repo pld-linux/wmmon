@@ -8,6 +8,7 @@ Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	http://www.xs4all.nl/~warp/files/%{name}-%{version}.tar.gz
+# Source0-md5:	1b8c780b8c24a6958c69330fef4171df
 Source1:	%{name}.desktop
 Patch0:		%{name}-makefile.patch
 URL:		http://www.xs4all.nl/~warp/files
