@@ -14,7 +14,6 @@ URL:		http://www.xs4all.nl/~warp/files
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix		/usr/X11R6
 
 %description
 WMMon monitors the realtime CPU load as well the average system load
