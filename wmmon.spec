@@ -8,8 +8,8 @@ Group:          X11/Window Managers/Tools
 Group(pl):      X11/Zarz±dcy Okien/Narzêdzia
 URL: 		http://www.xs4all.nl/~warp/files
 Source: 	http://www.xs4all.nl/~warp/files/wmmon-1.0b2.tar.gz
-BuildPrereq:    XFree86-devel
-BuildPrereq:    xpm-devel
+BuildRequires:    XFree86-devel
+BuildRequires:    xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define _prefix	/usr/X11R6
