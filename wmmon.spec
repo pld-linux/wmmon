@@ -11,7 +11,6 @@ Source1:	wmmon.desktop
 Patch:		wmmon-makefile.patch
 URL:            http://www.xs4all.nl/~warp/files
 BuildRequires:	XFree86-devel
-BuildRequires:	xpm-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
