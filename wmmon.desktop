@@ -5,4 +5,5 @@ Comment[pl]=Monitor obciążenia procesora i systemu
 Exec=wmmon
 Terminal=0
 Type=Application
+Encoding=UTF-8
 # vi: encoding=utf-8
