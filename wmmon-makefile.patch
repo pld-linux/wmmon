@@ -1,0 +1,17 @@
+--- wmmon/Makefile~	Tue May 19 23:13:16 1998
++++ wmmon/Makefile	Wed Jul 21 16:36:12 1999
+@@ -1,4 +1,5 @@
+ LIBDIR = -L/usr/X11R6/lib
++INCDIR = -I/usr/X11R6/include
+ LIBS   = -lXpm -lXext -lX11
+ OBJS =  wmmon.o \
+ 		../wmgeneral/wmgeneral.o \
+@@ -7,7 +8,7 @@
+ 
+ 
+ .c.o:
+-	cc -c -O2 -Wall $< -o $*.o
++	cc -c $(CFLAGS) $(INCDIR) $< -o $*.o
+ 
+ wmmon: $(OBJS)
+ 	cc -o wmmon $^ $(LIBDIR) $(LIBS)
