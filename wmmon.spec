@@ -45,7 +45,7 @@ równie¿ wiele innych, ciekawych opcji.
 %patch -p0
 
 %build
-make -C %{name} \
+%{__make} -C %{name} \
         CFLAGS="$RPM_OPT_FLAGS -Wall"
 
 %install
