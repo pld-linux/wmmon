@@ -2,7 +2,8 @@
 [Desktop Entry]
 Name=wmmon
 Comment=CPU and system load monitor
-Comment[pl]=Monitor obci±¿enia procesora i systemu
+Comment[pl]=Monitor obciÄ…Å¼enia procesora i systemu
 Exec=wmmon
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
