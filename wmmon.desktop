@@ -7,5 +7,5 @@ Terminal=false
 Type=Application
 Encoding=UTF-8
 Categories=Applet;
-NoShOwIn=GNOME;KDE;
+NotShOwIn=GNOME;KDE;
 # vi: encoding=utf-8
