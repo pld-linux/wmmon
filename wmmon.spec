@@ -60,7 +60,8 @@ dock de WindowMaker.
 
 %build
 %{__make} -C %{name} \
-        CFLAGS="%{rpmcflags} -Wall"
+        CFLAGS="%{rpmcflags} -Wall" \
+	CC=%{__cc}
 
 %install
 rm -rf $RPM_BUILD_ROOT
