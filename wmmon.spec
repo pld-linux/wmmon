@@ -1,8 +1,10 @@
 Summary:	WMMon monitors the realtime CPU load and system load 
 Summary(pl):	WMMon monitoruje obci±¿enie procesora i systemu
+Summary(pt_BR):	Applet para monitorar o uso de CPU/Memória/Disco/Swap
+Summary(es):	Applet para monitorar el uso de CPU/Memória/Disco/Swap
 Name:		wmmon
 Version:	1.0b2
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Group(de):	X11/Fenstermanager/Werkzeuge
@@ -40,6 +42,18 @@ WMMon monitoruje aktualne obci±¿enie procesora i zasobów
 systemowych, wy¶wietla ¶rednie warto¶ci obci±¿enia, zawiera
 równie¿ wiele innych, ciekawych opcji.
 
+%description -l pt_BR
+Wmmon é o canivete suíço da monitoração. Ele pode mostrar o uso
+de CPU, memória, swap, disco e outras informações úteis para o
+administrador do sistema. Wmmon é projetado para funcionar com o
+dock do WindowMaker.
+
+%description -l es
+Wmmon es el cuchillo suizo de la monitoración. Puede visualizar el
+uso de CPU, memoria, swap, disco y otras informaciones para los
+administradores de sistema. Wmmon se diseña para trabajar con el
+dock de WindowMaker.
+
 %prep
 %setup -q -n %{name}.app
 %patch -p0
@@ -54,7 +68,7 @@ install -d $RPM_BUILD_ROOT%{_bindir} \
 	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README HINTS CHANGES TODO
 
@@ -66,4 +80,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-%{_applnkdir}/DockApplets/wmmon.desktop
+#%{_applnkdir}/DockApplets/wmmon.desktop
