@@ -12,10 +12,9 @@ Patch:		wmmon-makefile.patch
 URL:            http://www.xs4all.nl/~warp/files
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 WMMon monitors the realtime CPU load as well the average
