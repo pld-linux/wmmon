@@ -77,4 +77,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README HINTS CHANGES TODO
 %attr(755,root,root) %{_bindir}/%{name}
 
-#%{_applnkdir}/DockApplets/wmmon.desktop
+#%%{_applnkdir}/DockApplets/wmmon.desktop
