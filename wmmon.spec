@@ -1,15 +1,16 @@
-Summary: 	WMMon monitors the realtime CPU load and system load 
+Summary:	WMMon monitors the realtime CPU load and system load 
 Summary(pl):	WMMon monitoruje obci±¿enie procesora i systemu
-Name: 		wmmon
-Version: 	1.0b2
-Release: 	4
-Copyright: 	GPL
-Group:          X11/Window Managers/Tools
-Group(pl):      X11/Zarz±dcy Okien/Narzêdzia
-Source0: 	http://www.xs4all.nl/~warp/files/%{name}-%{version}.tar.gz
-Source1:	wmmon.desktop
-Patch:		wmmon-makefile.patch
-URL:            http://www.xs4all.nl/~warp/files
+Name:		wmmon
+Version:	1.0b2
+Release:	4
+License:	GPL
+Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
+Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
+Source0:	http://www.xs4all.nl/~warp/files/%{name}-%{version}.tar.gz
+Source1:	%{name}.desktop
+Patch0:		%{name}-makefile.patch
+URL:		http://www.xs4all.nl/~warp/files
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -45,14 +46,14 @@ równie¿ wiele innych, ciekawych opcji.
 
 %build
 %{__make} -C %{name} \
-        CFLAGS="$RPM_OPT_FLAGS -Wall"
+        CFLAGS="%{rpmcflags} -Wall"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir} \
 	$RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
-install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
+install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf README HINTS CHANGES TODO
