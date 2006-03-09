@@ -59,7 +59,7 @@ de WindowMaker.
 %build
 %{__make} -C %{name} \
 	CFLAGS="%{rpmcflags} -Wall" \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	LIBDIR="-L/usr/X11R6/%{_lib}"
 
 %install
