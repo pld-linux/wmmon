@@ -1,7 +1,7 @@
 Summary:	WMMon monitors the realtime CPU load and system load
-Summary(pl.UTF-8):   WMMon monitoruje obciążenie procesora i systemu
-Summary(pt_BR.UTF-8):   Applet para monitorar o uso de CPU/Memória/Disco/Swap
-Summary(es.UTF-8):   Applet para monitorar el uso de CPU/Memória/Disco/Swap
+Summary(pl.UTF-8):	WMMon monitoruje obciążenie procesora i systemu
+Summary(pt_BR.UTF-8):	Applet para monitorar o uso de CPU/Memória/Disco/Swap
+Summary(es.UTF-8):	Applet para monitorar el uso de CPU/Memória/Disco/Swap
 Name:		wmmon
 Version:	1.0b2
 Release:	7
