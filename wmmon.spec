@@ -1,7 +1,7 @@
 Summary:	WMMon monitors the realtime CPU load and system load
-Summary(pl):	WMMon monitoruje obci±¿enie procesora i systemu
-Summary(pt_BR):	Applet para monitorar o uso de CPU/Memória/Disco/Swap
-Summary(es):	Applet para monitorar el uso de CPU/Memória/Disco/Swap
+Summary(pl.UTF-8):   WMMon monitoruje obciÄ…Å¼enie procesora i systemu
+Summary(pt_BR.UTF-8):   Applet para monitorar o uso de CPU/MemÃ³ria/Disco/Swap
+Summary(es.UTF-8):   Applet para monitorar el uso de CPU/MemÃ³ria/Disco/Swap
 Name:		wmmon
 Version:	1.0b2
 Release:	7
@@ -35,21 +35,21 @@ WMMon currently provides:
 - Commandline options for help (-h), version (-v), start mode (-i &
   -s) and display (-d);
 
-%description -l pl
-WMMon monitoruje aktualne obci±¿enie procesora i zasobów systemowych,
-wy¶wietla ¶rednie warto¶ci obci±¿enia, zawiera równie¿ wiele innych,
+%description -l pl.UTF-8
+WMMon monitoruje aktualne obciÄ…Å¼enie procesora i zasobÃ³w systemowych,
+wyÅ›wietla Å›rednie wartoÅ›ci obciÄ…Å¼enia, zawiera rÃ³wnieÅ¼ wiele innych,
 ciekawych opcji.
 
-%description -l pt_BR
-Wmmon é o canivete suíço da monitoração. Ele pode mostrar o uso de
-CPU, memória, swap, disco e outras informações úteis para o
-administrador do sistema. Wmmon é projetado para funcionar com o dock
+%description -l pt_BR.UTF-8
+Wmmon Ã© o canivete suÃ­Ã§o da monitoraÃ§Ã£o. Ele pode mostrar o uso de
+CPU, memÃ³ria, swap, disco e outras informaÃ§Ãµes Ãºteis para o
+administrador do sistema. Wmmon Ã© projetado para funcionar com o dock
 do WindowMaker.
 
-%description -l es
-Wmmon es el cuchillo suizo de la monitoración. Puede visualizar el uso
+%description -l es.UTF-8
+Wmmon es el cuchillo suizo de la monitoraciÃ³n. Puede visualizar el uso
 de CPU, memoria, swap, disco y otras informaciones para los
-administradores de sistema. Wmmon se diseña para trabajar con el dock
+administradores de sistema. Wmmon se diseÃ±a para trabajar con el dock
 de WindowMaker.
 
 %prep
